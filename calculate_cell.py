@@ -60,7 +60,11 @@ def main():
                 case 2:
                     i = int(input("iを入力して下さい: "))
                     j = int(input("jを入力して下さい: "))
-                    print(calculate_cell(i, j))
+                    if i==0 and j==0:
+                        print("i、jが共に0になることはありません")
+                        break
+                    else:
+                        print(calculate_cell(i, j))
 
                 case 3:
                     min_val = int(input("最小値を入力して下さい: "))
